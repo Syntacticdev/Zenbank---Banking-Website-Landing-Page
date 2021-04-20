@@ -1,0 +1,33 @@
+.section_five {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.section_five h1 {
+  margin-bottom: 60px;
+}
+
+.customer_testimony {
+  overflow-x: hidden;
+}
+
+.customer_testimony > div {
+  overflow: none;
+  padding: 10px;
+}
+
+.customer_image {
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.customer_testimony p {
+  font-size: 12px;
+}
+
+.customer_testimony h3 {
+  margin: 15px 0;
+}

@@ -1,0 +1,47 @@
+.section_one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.section_one h3 {
+  font-size: 40px;
+}
+
+.section_one p {
+  padding-top: 20px;
+}
+
+.section_one > div:first-child {
+  padding-right: 100px;
+}
+
+@media (max-width: 600px) {
+  .section_one {
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .section_one > div:first-child {
+    padding: 0;
+  }
+
+  .section_one h3 {
+    font-size: 30px;
+  }
+
+  .downloads_btn {
+    margin-top: 30px;
+  }
+}
+
+.downloads_btn {
+  display: flex;
+}
+
+.section_one button {
+  margin: 20px 30px 10px 0;
+}

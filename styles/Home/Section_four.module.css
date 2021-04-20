@@ -1,0 +1,133 @@
+.section_four {
+  position: relative;
+  padding: 40px 0;
+  overflow-x: hidden;
+}
+
+.section_four::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(to bottom, #93edc7, #1cd8d2);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.ex_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.payment {
+  padding-right: 100px;
+}
+
+.payment h2 {
+  font-size: 30px;
+}
+
+.payment p {
+  margin: 20px 0;
+}
+
+.exchange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exchange_card {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 50%), -1px 2px 4px rgba(0, 0, 0, 50%);
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 10px;
+}
+
+.exchange_btn {
+  padding: 10px 20px;
+  background: rgb(182, 221, 218);
+  color: #0b3b26;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content > div:first-child,
+.content > div:last-child {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.content > div > div {
+  display: grid;
+}
+
+.content .from span:first-child,
+.content .to span:first-child {
+  font-weight: 600;
+}
+
+.content .from span:last-child,
+.content .to span:last-child {
+  color: palevioletred;
+  font-weight: 700;
+}
+
+.currency {
+  color: purple;
+}
+
+@media (max-width: 600px) {
+  .ex_box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section_four::after {
+    height: 40%;
+    width: 300px;
+  }
+
+  .section_four::before {
+    content: "";
+    position: absolute;
+    bottom: 27%;
+    left: -150px;
+    width: 300px;
+    height: 40%;
+    background: linear-gradient(to bottom, #93edc7, #1cd8d2);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .exchange {
+    margin-top: 120px;
+  }
+
+  .exchange_card {
+    width: 80%;
+    height: 100%;
+    background: #f0f7f4;
+    padding: 40px 10px;
+  }
+
+  .payment {
+    padding: 40px 0;
+  }
+
+  .payment h2 {
+    font-size: 30px;
+  }
+
+  .payment p {
+    margin: 10px 0;
+  }
+}
